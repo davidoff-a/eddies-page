@@ -1,0 +1,23 @@
+.promo {
+  //margin-left: 277px;
+
+  &__question {
+    @include text($color: $blue1, $size: 1.5rem);
+  }
+  &__slogan{
+    width: 536px;
+
+    margin-top: 16px;
+  }
+
+}
+.hero {
+  margin-top: 42px;
+
+  &__banner {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}

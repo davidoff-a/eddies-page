@@ -2,87 +2,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -92,17 +24,8 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -110,20 +33,16 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: "";
   content: none;
 }
@@ -131,6 +50,273 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.services__btn, .services__descr, .services__title, .invitation__input::placeholder, .invitation__form label, .invitation__about, .promo__question, .logo, .header, .title {
+  font-family: Poppins;
+  font-style: normal;
+  line-height: 150%;
+}
+
+.services__btn, .services__icon_red, .services__icon_green, .services__icon_blue, .services__icon, .invitation__join {
+  border-radius: 1rem;
+  border: none;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 320px;
+  padding: 0 54px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #333333;
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+section {
+  margin-left: 277px;
+}
+
+.header {
+  width: 100%;
+  height: 135px;
+  padding-top: 42px;
+  margin-bottom: 83px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333333;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.logo {
+  color: #333333;
+  font-weight: 800;
+  font-size: 3rem;
+  font-family: Heebo;
+}
+
+.nav__menu {
+  width: 703px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__link {
+  position: relative;
+}
+.nav__link:hover.nav__link:before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: #333333;
+}
+
+.burger {
+  width: 18px;
+  height: 12px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.burger__line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  transition: all 0.4s ease;
+}
+.opened .burger__line:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+.opened .burger__line:nth-child(2) {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.opened .burger__line:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+  .nav__menu {
+    width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+    min-width: 250px;
+  }
+  .burger {
+    display: flex;
+  }
+  .nav__menu {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+.promo__question {
+  color: #2d9cdb;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.promo__slogan {
+  width: 536px;
+  margin-top: 16px;
+}
+
+.hero {
+  margin-top: 42px;
+}
+.hero__banner {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.invitation {
+  padding-top: 42px;
+  width: 366px;
+}
+.invitation__about {
+  margin-top: 42px;
+  color: #4f4f4f;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.invitation__form {
+  margin-top: 42px;
+}
+.invitation__form label {
+  color: #e0e0e0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.invitation__group {
+  position: relative;
+}
+.invitation__input {
+  width: 350px;
+  height: 56px;
+  padding: 4px 4px 4px 21px;
+  margin-top: 9px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f2f2f2;
+}
+.invitation__input::placeholder {
+  color: #bdbdbd;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.invitation__join {
+  width: 8rem;
+  height: 4rem;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
+
+.offer {
+  margin-top: 200px;
+}
+
+.services {
+  width: 100%;
+  height: auto;
+  margin-top: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services__card {
+  flex: 0 1 30%;
+  padding: 4rem 3rem;
+  border-radius: 1rem;
+  transition: box-shadow 0.4ms ease;
+}
+.services__card:hover {
+  box-shadow: 0 0 15px #bdbdbd;
+  transition: box-shadow 0.4ms ease;
+}
+.services__card:hover .services__btn {
+  background-color: #2d9cdb;
+  color: #ffffff;
+}
+.services__icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  line-height: 6.5rem;
+  text-align: center;
+}
+.services__icon_blue {
+  background-color: #2d9cdb;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.services__icon_green {
+  background-color: #27ae60;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.services__icon_red {
+  background-color: #eb5757;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.services__title {
+  color: #333333;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 35px;
+}
+.services__descr {
+  color: #4f4f4f;
+  font-weight: 400;
+  font-size: 1.35rem;
+  margin-top: 24px;
+}
+.services__btn {
+  background-color: #e0e0e0;
+  width: 9.7rem;
+  height: 3.5rem;
+  color: #828282;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 2.5rem;
+  line-height: 3.5rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

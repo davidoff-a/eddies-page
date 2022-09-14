@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 320px;
+  padding: 0 54px;
+  margin: 0 auto;
+}
+
+.title {
+  @include text($size: 4rem);
+}
+
+section {
+  margin-left: 277px;
+}

@@ -1,0 +1,43 @@
+@mixin desktop() {
+  @media (max-width: $breakpoint_xxl) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: $breakpoint_xl) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: $breakpoint_md) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: $breakpoint_sm) {
+    @content;
+  }
+}
+
+@mixin text($color: $gray1, $size: 1rem, $weight: 500) {
+  @extend %text;
+  color: $color;
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin btn($width: 4.5rem, $height: 4.5rem) {
+  @extend %btn;
+  width: $width;
+  height: $height;
+}
+
+@mixin btn-color($width: 5.5rem, $height: 5.5rem, $color: $blue1) {
+  background-color: $color;
+  @extend %btn;
+  width: $width;
+  height: $height;
+}

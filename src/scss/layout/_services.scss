@@ -1,0 +1,56 @@
+.offer {
+  margin-top: 200px;
+}
+.services {
+  width: 100%;
+  height: auto;
+
+  margin-top: 42px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__card {
+    flex: 0 1 30%;
+    padding: 4rem 3rem;
+    border-radius: 1rem;
+    transition: box-shadow 0.4ms ease;
+    &:hover {
+      box-shadow: 0 0 15px $gray4;
+      transition: box-shadow 0.4ms ease;
+    }
+    &:hover .services__btn {
+      background-color: $blue1;
+      color: #ffffff;
+    }
+  }
+  &__icon {
+    @include btn;
+    line-height: 6.5rem;
+    text-align: center;
+    &_blue {
+      @include btn-color;
+    }
+    &_green {
+      @include btn-color($color: $green1);
+    }
+    &_red {
+      @include btn-color($color: $red1);
+    }
+  }
+  &__title {
+    @include text($size: 2rem, $weight: 700);
+    margin-top: 35px;
+  }
+  &__descr {
+    @include text($size: 1.35rem, $weight: 400, $color: $gray2);
+    margin-top: 24px;
+  }
+  &__btn {
+    @include btn-color($color: $gray3, $width: 9.7rem, $height: 3.5rem);
+    @include text($color: $gray5, $size: 1.3rem);
+    margin-top: 2.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+}

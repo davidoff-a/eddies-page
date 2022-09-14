@@ -1,0 +1,38 @@
+.invitation {
+  //margin-left: 277px;
+  padding-top: 42px;
+  width: 366px;
+  &__about {
+    margin-top: 42px;
+    @include text($size: 1.5rem, $weight: 400, $color: $gray2);
+  }
+  &__form {
+    margin-top: 42px;
+    & label {
+      @include text($size: 1.2rem, $color:$gray3)
+    }
+  }
+  &__group {
+    position: relative;
+  }
+  &__input {
+    width: 350px;
+    height: 56px;
+
+    padding: 4px 4px 4px 21px;
+    margin-top: 9px;
+
+    border-radius: 12px;
+    border: none;
+    background-color: $gray6;
+    &::placeholder {
+      @include text($size: 1.5rem, $color: $gray4);
+    }
+  }
+  &__join {
+    @include btn($width: 8rem, $height: 4rem);
+    position: absolute;
+    right: 20px;
+    top: 14px;
+  }
+}
