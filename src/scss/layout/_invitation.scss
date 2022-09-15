@@ -1,5 +1,5 @@
 .invitation {
-  //margin-left: 277px;
+  margin-left: 277px;
   padding-top: 42px;
   width: 366px;
   &__about {
@@ -9,7 +9,7 @@
   &__form {
     margin-top: 42px;
     & label {
-      @include text($size: 1.2rem, $color:$gray3)
+      @include text($size: 1.2rem, $color: $gray3);
     }
   }
   &__group {
@@ -30,9 +30,9 @@
     }
   }
   &__join {
-    @include btn($width: 8rem, $height: 4rem);
+    @include btn-color($width: 8rem, $height: 4rem);
     position: absolute;
     right: 20px;
-    top: 14px;
+    top: 13px;
   }
 }

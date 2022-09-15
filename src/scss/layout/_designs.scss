@@ -1,0 +1,74 @@
+.good-design {
+  margin-top: 200px;
+}
+
+.designs {
+  max-width: 1110px;
+  max-height: 1690px;
+
+  position: relative;
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  // .design__item
+  &__item {
+    margin-top: 200px;
+    &:nth-child(3),
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.drawing {
+  width: calc(50% - 10px);
+  &:nth-child(1) .drawing__frame {
+    background: url("../assets/gallery/smarthome.jpg") center center/cover
+      no-repeat;
+  }
+  &:nth-child(3) .drawing__frame {
+    background: url("../assets/gallery/onboard.png") center center/cover
+      no-repeat;
+  }
+  &:nth-child(2) .drawing__frame {
+    background: url("../assets/gallery/booking.png") center center/cover
+      no-repeat;
+  }
+  &:nth-child(4) .drawing__frame {
+    background: url("../assets/gallery/juice-product.png") center center/cover
+      no-repeat;
+  }
+  // .drawing__frame
+  &__frame {
+    height: 545px;
+    min-height: 350px;
+    max-width: 545px;
+    min-width: 350px;
+
+    border-radius: 12px;
+  }
+
+  // .drawing__subtitle
+  &__subtitle {
+    @include text($weight: 300, $size: 14px);
+    margin-top: 20px;
+  }
+
+  // .drawing__title
+  &__title {
+    @include text($size: 2rem);
+  }
+  &__see-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @include text($color: $blue1, $size: 3rem);
+  }
+}
