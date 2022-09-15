@@ -1,13 +1,15 @@
 .invitation {
-  margin-left: 277px;
   padding-top: 42px;
-  width: 366px;
+  //width: 366px;
   &__about {
     margin-top: 42px;
+    max-width: 366px;
+
     @include text($size: 1.5rem, $weight: 400, $color: $gray2);
   }
   &__form {
     margin-top: 42px;
+    max-width: 366px;
     & label {
       @include text($size: 1.2rem, $color: $gray3);
     }

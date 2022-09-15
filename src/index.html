@@ -36,8 +36,8 @@
     <title>Devchallenges</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container container_wide row">
         <div class="logo">Edie</div>
         <nav class="nav">
           <ul class="nav__menu">
@@ -53,23 +53,29 @@
           <li class="burger__line"></li>
           <li class="burger__line"></li>
         </ul>
-      </header>
-      <main class="main">
-        <section class="promo">
-          <h3 class="promo__question">Unhappy with your website?</h3>
+      </div>
+    </header>
+    <main class="main">
+      <section class="promo">
+        <div class="container container_narrow">
+          <h3 class="subtitle">Unhappy with your website?</h3>
           <h1 class="title promo__slogan">
             We create beautiful<br />
             and fast web services
           </h1>
-        </section>
-        <div class="hero">
+        </div>
+      </section>
+      <section class="hero">
+        <div class="container container_wide">
           <img
             src="./assets/heroImage.jpg"
             alt="hero image"
             class="hero__banner"
           />
         </div>
-        <section class="invitation">
+      </section>
+      <section class="invitation">
+        <div class="container container_narrow">
           <h2 class="title">
             Story, emotion<br />
             and purpose
@@ -96,9 +102,11 @@
               />
             </div>
           </form>
-        </section>
-        <section class="offer">
-          <h2 class="title">
+        </div>
+      </section>
+      <section class="offer">
+        <div class="container container_middle">
+          <h2 class="title title_fz36">
             We offer high<br />
             demand services
           </h2>
@@ -137,8 +145,10 @@
               <div class="services__btn">Get started</div>
             </li>
           </ul>
-        </section>
-        <section class="good-design">
+        </div>
+      </section>
+      <section class="good-design">
+        <div class="container container_middle">
           <div class="title">
             Good design means<br />
             good business
@@ -171,8 +181,36 @@
               </a>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container container_middle row">
+          <div class="team__about row col start">
+            <div class="subtitle subtitle_red">Meet the team</div>
+            <h2 class="title title_fz36">
+              We are chilled <br />and laid back <br />team
+            </h2>
+            <div class="team__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+          <div class="team__people avatars">
+            <img
+              src="./assets/people/person1.png"
+              alt="person1"
+              class="avatars__item"
+            /><img
+              src="./assets/people/person2.png"
+              alt="person2"
+              class="avatars__item"
+            /><img
+              src="./assets/people/person3.png"
+              alt="person3"
+              class="avatars__item"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

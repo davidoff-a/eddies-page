@@ -1,15 +1,7 @@
 .promo {
-  margin-left: 277px;
-
-  &__question {
-    @include text($color: $blue1, $size: 1.5rem);
-  }
-  &__slogan{
-    width: 536px;
-
+  &__slogan {
     margin-top: 16px;
   }
-
 }
 .hero {
   margin-top: 42px;
