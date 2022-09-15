@@ -57,7 +57,7 @@ a {
   color: black;
 }
 
-.team__descr, .drawing__see-more, .drawing__title, .drawing__subtitle, .services__btn, .services__descr, .services__title, .invitation__input::placeholder, .invitation__form label, .invitation__about, .logo, .header, .subtitle, .title {
+.author__position, .author__name, .review__text, .team__descr, .drawing__see-more, .drawing__title, .drawing__subtitle, .services__btn, .services__descr, .services__title, .invitation__input::placeholder, .invitation__form label, .invitation__about, .logo, .header, .subtitle, .title {
   font-family: Poppins;
   font-style: normal;
   line-height: 150%;
@@ -444,6 +444,50 @@ html {
   grid-row: 1/3;
   grid-column: 1/2;
   align-self: center;
+}
+
+.review {
+  margin-top: 200px;
+  height: 287px;
+}
+.review__text {
+  color: #333333;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  max-width: 940px;
+}
+.review__author {
+  margin-top: 50px;
+}
+
+.author {
+  max-width: 325px;
+  display: grid;
+  grid-template: repeat(2, 1fr)/1fr 3fr;
+  row-gap: 12px;
+  column-gap: 30px;
+}
+.author__photo {
+  width: 82px;
+  height: 82px;
+  border-radius: 12px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.author__name {
+  color: #333333;
+  font-weight: 500;
+  font-size: 2rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.author__position {
+  color: #e0e0e0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 /*# sourceMappingURL=style.css.map */
