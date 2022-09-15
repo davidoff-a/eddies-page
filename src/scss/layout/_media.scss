@@ -1,0 +1,96 @@
+@include desktop {
+}
+
+@include laptop {
+  .container {
+    max-width: 747px;
+  }
+  .mt200 {
+    margin-top: 150px;
+  }
+  .team__people {
+    flex: 0 1 50%;
+  }
+  .designs {
+    width: 720px;
+    height: 1150px;
+  }
+  .designs__item {
+    margin-top: 150px;
+  }
+  .drawing__frame {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@include tablet {
+  .mt200 {
+    margin-top: 80px;
+  }
+  .designs {
+    flex-wrap: nowrap;
+    height: 1860px;
+    width: 350px;
+    max-height: 1850px;
+    &__item {
+      margin-top: 0;
+    }
+  }
+  .drawing {
+    width: 100%;
+  }
+  .footer__cellar {
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .mt200 {
+    margin-top: 40px;
+  }
+  .designs {
+    flex-wrap: nowrap;
+    height: 1550px;
+    width: 280px;
+    //max-height: 1800px;
+    &__item {
+      margin-top: 0;
+    }
+  }
+  .drawing__frame {
+    width: 280px;
+    height: 280px;
+    min-width: 280px;
+    min-height: 280px;
+  }
+  .team .row {
+    flex-direction: column;
+  }
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-socials__menu.row {
+    flex-direction: row;
+  }
+
+  .invitation__input {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .review {
+    height: 360px;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

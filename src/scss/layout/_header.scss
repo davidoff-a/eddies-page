@@ -63,18 +63,19 @@
   }
 }
 
-@include desktop {
-}
 @include laptop {
   html {
     font-size: 8px;
   }
+
+  .header{height: 100px}
   .nav__menu {
     width: 400px;
   }
 }
 
 @include tablet {
+  .header{height: 80px}
   .container {
     padding: 0 20px;
     min-width: 250px;
@@ -89,6 +90,7 @@
 }
 
 @include mobile {
+  .header{height: 50px}
   .container {
     padding: 0 10px;
   }

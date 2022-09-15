@@ -21,9 +21,17 @@ html {
   }
 }
 
+.h100 {
+  height: 100%;
+}
+
+.mt200 {
+  margin-top: 200px;
+}
+
 .title {
   @include text($size: 4rem);
-  &_fz36{
+  &_fz36 {
     font-size: 3rem;
   }
 }
